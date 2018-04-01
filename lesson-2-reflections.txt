@@ -1,0 +1,24 @@
+Lesson 2
+
+Start a new repository
+Go to the folder with the files and run
+>git init
+This will only initialize the repository and will NOT create any commits for you
+
+According to the lesson, running git status should tell “Initial commit”. However, on my computer, it tells me
+“No commits yet” instead
+
+Stage for commit to the “staging area”
+>git add <file>
+
+To de-stage a file, use git reset
+
+For committing, simply run 
+>git commit
+If the core.editor has been set up properly, it will open the core editor.
+As it turned out, my editor Sublime Text, was not properly setup. Adding a symlink to /usr/local/bin/subl did the trick 
+
+I should by the way consider buying a license for Sublime Text. It is per-user and costs $80
+
+Possible Resource
+http://dont-be-afraid-to-commit.readthedocs.io/en/latest/git/commandlinegit.html
