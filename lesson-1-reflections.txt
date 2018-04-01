@@ -63,6 +63,13 @@ Add
 alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 To .bash_profile
 
+This did not work! I instead tested symbolic linking
+ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
+http://docs.sublimetext.info/en/latest/getting_started/install.html
+
+Now it works!
+
+
 Configure the git config
 >git config --global core.editor "subl -n -w"
 >git config --global push.default upstream
